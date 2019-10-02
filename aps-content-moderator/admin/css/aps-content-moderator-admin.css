@@ -1,0 +1,33 @@
+.aps-content-moderator__comment-meta-box__original-text {
+  font-size: 17px;
+  line-height: 28px;
+}
+.aps-content-moderator__comment-meta-box__review-recommended {
+  font-size: 17px;
+  color:red;
+}
+mark.aps-content-moderator__comment-meta-box__mark-profanity {
+  background: red;
+  color: white;
+}
+mark.aps-content-moderator__comment-meta-box__mark-pii {
+  background: blue;
+  color: white;
+}
+
+#aps-content-moderator__category1-slider,
+#aps-content-moderator__category2-slider,
+#aps-content-moderator__category3-slider {
+  width: 350px;
+}
+
+#aps-content-moderator__category1-slider-handle,
+#aps-content-moderator__category2-slider-handle,
+#aps-content-moderator__category3-slider-handle {
+  width: 3em;
+  height: 1.6em;
+  top: 50%;
+  margin-top: -.8em;
+  text-align: center;
+  line-height: 1.6em;
+}
