@@ -42,7 +42,7 @@ if (!class_exists('APS_Content_Moderator_Admin_CommentController')) {
             $wp_scripts = wp_scripts();
             wp_enqueue_style(
                 'jquery-ui-theme-smoothness',
-                plugin_dir_url(__FILE__) . 'css/aipwr-solutions-admin-jqueryui.css',
+                plugin_dir_url(__FILE__) . 'css/aps-content-moderator-admin-jqueryui.css',
                 false,
                 APS_Content_Moderator::PLUGIN_VERSION
             );
