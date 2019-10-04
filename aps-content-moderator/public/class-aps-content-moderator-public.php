@@ -206,7 +206,7 @@ if (!class_exists('APS_Content_Moderator_Public')) {
             $moderateResult = $this->moderate_text_content(
                 $comment,
                 array(
-                    'access_key' => get_option('aps-content-moderator-cm-settings-data_access_key', false),
+                    'access_key' => defined('APS_CM_RAPIDAPI_KEY') ? APS_CM_RAPIDAPI_KEY : get_option('aps-content-moderator-cm-settings-data_access_key', false),
                     'access_url' => get_option('aps-content-moderator-cm-settings-data_access_url', false),
                     'site_lang' => $this->get_site_lang()
                 )
