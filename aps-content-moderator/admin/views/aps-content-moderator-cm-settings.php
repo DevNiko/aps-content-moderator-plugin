@@ -8,11 +8,21 @@
                 <tr>
                     <th scope="row"><label for="Rapid-API Key">Rapid-API Key</label></th>
                     <td>
-                        <input class="regular-text" type="text" name="aps-content-moderator-cm-settings-data_access_key"
+                        <?php
+                            $rapidApiKeyDefined = false;
+                            if($keyConstant = defined('APS_CM_RAPIDAPI_KEY')) {
+                                if (strlen($keyConstant) > 0) {
+                                    $rapidApiKeyDefined = true;
+                                }
+                            } 
+                        ?>
+                        <input <?php echo $rapidApiKeyDefined ? "disabled='disabled'" : ""; ?> class="regular-text" type="text" name="aps-content-moderator-cm-settings-data_access_key"
                             value="<?php echo esc_html(get_option('aps-content-moderator-cm-settings-data_access_key')); ?>"/>
                         <p class="description" id="aipwrd_access_url-description">
                             Visit the <a href="https://rapidapi.com/dev.nico/api/ai-powered-content-moderator/pricing"
                                         target="_blank">API-Site</a> for a key.
+                                        For more security, you can store the key as a constant in the wp-config.php file. Then you can ignore the field here.
+                                        <br/><i>define('APS_CM_RAPIDAPI_KEY', 'YOURKEY_YYXX');</i>
                         </p>
                     </td>
                 </tr>
