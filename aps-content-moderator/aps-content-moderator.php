@@ -13,7 +13,7 @@
  * Description:             APS Content Moderator API Plugin.
  * Version:                   1.0.0
  * Author:                    DevNiko
- * Author URI:              https://github.com/DevNiko/aps-content-moderator-plugin
+ * Author URI:              https://github.com/DevNiko
  * License:                   GPL-2.0+
  * License URI:             http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:            aps-content-moderator
