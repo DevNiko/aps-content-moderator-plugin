@@ -8,9 +8,9 @@
  * @package        APS_Content_Moderator
  *
  * @wordpress-plugin
- * Plugin Name:           APS Content Moderator Plugin for Wordpress
+ * Plugin Name:           APS Content Moderator Plugin
  * Plugin URI:              https://github.com/DevNiko/aps-content-moderator-plugin
- * Description:             APS Content Moderator API Plugin for Wordpress.
+ * Description:             APS Content Moderator API Plugin.
  * Version:                   1.0.0
  * Author:                    DevNiko
  * Author URI:              https://github.com/DevNiko/aps-content-moderator-plugin
