@@ -6,7 +6,13 @@ The sensitivity of the filtering can be adjusted.
 
 **Installation**
 
-Copy the content into your Wordpress Plugin Directory. Activate the Plugin using the WP-Admin Dashboard.
+*Local*
+
+Install Docker and use "docker-compose up" to startup the Wordpress Stack. Use "http://localhost:8000" for Wordpress and "http://localhost:8001" for phpMyAdmin. 
+
+*Production*
+
+Upload the folder "aps-content-moderator" into your Wordpress Plugin Directory on your Webhost. Activate the Plugin using the WP-Admin Dashboard. Or use the official Plugin Installer in Wordpress.
 
 **Notice**
 

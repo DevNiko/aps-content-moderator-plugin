@@ -16,13 +16,17 @@
                                 }
                             } 
                         ?>
-                        <input <?php echo $rapidApiKeyDefined ? "disabled='disabled'" : ""; ?> class="regular-text" type="text" name="aps-content-moderator-cm-settings-data_access_key"
+                        <input <?php echo $rapidApiKeyDefined ? "disabled='disabled'" : ""; ?> class="regular-text" type="password" name="aps-content-moderator-cm-settings-data_access_key"
                             value="<?php echo esc_html(get_option('aps-content-moderator-cm-settings-data_access_key')); ?>"/>
                         <p class="description" id="aipwrd_access_url-description">
                             Visit the <a href="https://rapidapi.com/dev.nico/api/ai-powered-content-moderator/pricing"
                                         target="_blank">API-Site</a> for a key.
-                                        For more security, you can store the key as a constant in the wp-config.php file. Then you can ignore the field here.
-                                        <br/><i>define('APS_CM_RAPIDAPI_KEY', 'YOURKEY_YYXX');</i>
+                                <?php if(!$rapidApiKeyDefined):?>
+                                    For more security, you can store the key as a constant in the wp-config.php file. Then you can ignore the field here.
+                                    <br/><i>define('APS_CM_RAPIDAPI_KEY', 'YOURKEY_YYXX');</i>
+                                <?php else:?>
+                                    <br/>(You stored your key already in the file "wp-config.php".)
+                                <?php endif;?>
                         </p>
                     </td>
                 </tr>
