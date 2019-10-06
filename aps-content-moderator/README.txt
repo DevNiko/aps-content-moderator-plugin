@@ -42,11 +42,9 @@ For more infromation please visit the Documentation: https://rapidapi.com/dev.ni
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. The Content Moderator Plugin Settings Section.
+2. In the comment Edit Section you can review the result.
+3. In the result table you can see what the API has found in the text.
 
 == Changelog ==
 1.0.0 Release
