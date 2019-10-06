@@ -56,3 +56,6 @@ For more infromation please visit the Documentation: https://rapidapi.com/dev.ni
 
 The plugin limits the comment text length to 1024 characters. Since the Content Moderator API can handle a maximum of 1024 characters per request. The limitation can be switched off in the plugin settings. Then only the first 1024 of the comment will be checked.
 Furthermore, all HTML tags are filtered out of the comment.
+
+== Support ==
+Please visit the GitHub repository page and open an issue: https://github.com/DevNiko/aps-content-moderator-plugin/issues
