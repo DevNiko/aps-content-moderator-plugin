@@ -14,6 +14,12 @@ Install Docker and use "docker-compose up" to startup the Wordpress Stack. Use "
 
 Upload the folder "aps-content-moderator" into your Wordpress Plugin Directory on your Webhost. Activate the Plugin using the WP-Admin Dashboard. Or use the official Plugin Installer in Wordpress.
 
+*Plugin Settings*
+
+Go to "Settings -> APS Content Moderator"  for Plugin Settings.
+
+![Screenshot](./aps-content-moderator/assets/screenshot-1.png)
+
 **Notice**
 
 The plugin limits the comment text length to 1024 characters. Since the Content Moderator API can handle a maximum of 1024 characters per request. The limitation can be switched off in the plugin settings. Then only the first 1024 of the comment will be checked.
