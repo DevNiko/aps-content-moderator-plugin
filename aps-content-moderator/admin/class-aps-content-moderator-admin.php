@@ -83,18 +83,17 @@ if (!class_exists('APS_Content_Moderator_Admin')) {
         public function enqueue_styles()
         {
             wp_enqueue_style(
-                $this->plugin_name,
+                $this->plugin_name . 'aps-admin-style ',
                 plugin_dir_url(__FILE__) . 'css/aps-content-moderator-admin.css',
                 array(),
-                $this->version, 'all');
+                $this->version, 'all'
+            );
 
-            $wp_scripts = wp_scripts();
             wp_enqueue_style(
-                'jquery-ui-theme-smoothness',
-                sprintf(
-                  '//ajax.googleapis.com/ajax/libs/jqueryui/%s/themes/smoothness/jquery-ui.css',
-                  $wp_scripts->registered['jquery-ui-core']->ver
-                )
+                $this->plugin_name . '-jqueryui-style',
+                plugin_dir_url(__FILE__) . 'css/aps-content-moderator-admin-jqueryui.css',
+                array(),
+                $this->version, 'all'
             );
         }
 
