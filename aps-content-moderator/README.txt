@@ -58,4 +58,5 @@ The plugin limits the comment text length to 1024 characters. Since the Content 
 Furthermore, all HTML tags are filtered out of the comment.
 
 == Support ==
+
 Please visit the GitHub repository page and open an issue: https://github.com/DevNiko/aps-content-moderator-plugin/issues
