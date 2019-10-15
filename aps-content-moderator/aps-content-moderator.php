@@ -29,7 +29,7 @@ if (!defined('WPINC')) {
  * Currently plugin version.
  * Start at version 1.0.0 and use SemVer - https://semver.org
  */
-define('APS_CONTENT_MODERATOR_VERSION', '1.0.0');
+define('APS_CONTENT_MODERATOR_VERSION', '1.0.1');
 
 /**
  * The code that runs during plugin activation.

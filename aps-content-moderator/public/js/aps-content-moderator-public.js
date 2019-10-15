@@ -41,7 +41,7 @@
             });
         }
 
-        $.aipwrd_countAndDisplayCommentChars($('#comment'));
+        $.aipwrd_countAndDisplayCommentChars($('#commentform #comment'));
         $('#comment').after('<br/><label class="info" id="comment-chars-text">'+aps_config.comment_counter_text+'</label>');
         $('#comment').on('input', function(event) {
             $.aipwrd_countAndDisplayCommentChars($(this));
