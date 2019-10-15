@@ -48,6 +48,7 @@ For more infromation please visit the Documentation: https://rapidapi.com/dev.ni
 
 == Changelog ==
 1.0.0 Release
+1.0.1 Bugfix: Refined Post comment field selection to avoid problems with other plugins.
 
 == Upgrade Notice ==
 1.0.0 Release
