@@ -17,7 +17,7 @@ if (!class_exists('APS_Content_Moderator')) {
 	class APS_Content_Moderator {
 
     const PLUGIN_NAME = 'aps-content-moderator';
-    const PLUGIN_VERSION = '1.0.0';
+    const PLUGIN_VERSION = '1.0.1';
 
 		/**
 		 * The loader that's responsible for maintaining and registering all hooks that power
