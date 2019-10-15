@@ -28,7 +28,7 @@ Activate the plugin through the 'Plugins' menu in WordPress
 
 The settings can be found under the menu item Settings -> Aps Content Moderator.
 
-= Where can I get the APS Content ModeratoAPI Key? =
+= Where can I get the APS Content Moderator API Key? =
 
 To get the API Key, visit the site https://rapidapi.com/dev.nico/api/ai-powered-content-moderator
 
