@@ -1,6 +1,6 @@
 === APS Content Moderator Plugin ===
 Contributors: DevNiko
-Website link: https://wordpress.aipowered.solutions/
+Website link: https://github.com/DevNiko/aps-content-moderator-plugin
 Tags: text analysis, ai, comment, blog post, filtering, unwanted content
 Requires at least: 4.5.0
 Tested up to: 5.2.3
