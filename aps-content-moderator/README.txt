@@ -49,6 +49,7 @@ For more infromation please visit the Documentation: https://rapidapi.com/dev.ni
 == Changelog ==
 1.0.0 Release
 1.0.1 Bugfix: Refined Post comment field selection to avoid problems with other plugins.
+1.1.1 Some JS bug fixes and improvements. Added new settings options (enable / disable "Comment Max Length Notification". Possibility to define a alternate HTML element id or class name for the comment textarea. )
 
 == Upgrade Notice ==
 1.0.0 Release

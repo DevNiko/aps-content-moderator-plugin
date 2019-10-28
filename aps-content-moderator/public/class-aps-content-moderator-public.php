@@ -67,7 +67,9 @@ if (!class_exists('APS_Content_Moderator_Public')) {
                 'site_lang' => $this->get_site_lang(),
                 'base_url' => get_site_url(),
                 'comment_counter_text' => __('1024 of a maximum of 1024 characters left', APS_Content_Moderator::PLUGIN_NAME),
-                'js_validation_enabled' => get_option('aps-content-moderator-cm-settings_comment-threshold', 1)
+                'display_comment_counter_text' => get_option('aps-content-moderator-cm-settings_comment-max-length-note', 1),
+                'js_validation_enabled' => get_option('aps-content-moderator-cm-settings_comment-threshold', 1),
+                'comment_input_field_id' => get_option( 'aps-content-moderator-cm-settings_comment-field-id', '#commentform #comment' )
             );
 
             // only on post pages

@@ -50,6 +50,20 @@ if (!class_exists('APS_Content_Moderator_Admin_SettingsController')) {
             } else {
                 update_option('aps-content-moderator-cm-settings_comment-threshold', 0);
             }
+            // comment max length note checkbox
+            if (isset($_POST['aps-content-moderator-cm-settings_comment-max-length-note'])) {
+                $commentThreshold = sanitize_text_field($_POST['aps-content-moderator-cm-settings_comment-max-length-note']);
+                if ($commentThreshold == 'on') {
+                    update_option('aps-content-moderator-cm-settings_comment-max-length-note', 1);
+                }
+            } else {
+                update_option('aps-content-moderator-cm-settings_comment-max-length-note', 0);
+            }
+            // comment field id
+            if (isset($_POST['aps-content-moderator-cm-settings_comment-field-id'])) {
+                $commentFieldId = sanitize_text_field($_POST['aps-content-moderator-cm-settings_comment-field-id']);
+                update_option('aps-content-moderator-cm-settings_comment-field-id', $commentFieldId);
+            }
 
             $this->redirect();
         }

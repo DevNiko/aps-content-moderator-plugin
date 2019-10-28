@@ -14,7 +14,7 @@
                                 if (strlen($keyConstant) > 0) {
                                     $rapidApiKeyDefined = true;
                                 }
-                            } 
+                            }
                         ?>
                         <input <?php echo $rapidApiKeyDefined ? "disabled='disabled'" : ""; ?> class="regular-text" type="password" name="aps-content-moderator-cm-settings-data_access_key"
                             value="<?php echo esc_html(get_option('aps-content-moderator-cm-settings-data_access_key')); ?>"/>
@@ -36,7 +36,7 @@
                         <input class="regular-text" type="text" name="aps-content-moderator-cm-settings-data_access_url"
                             value="<?php echo esc_html(get_option('aps-content-moderator-cm-settings-data_access_url')); ?>"/>
                         <p class="description" id="aipwrd_access_url-description">
-                        
+
                         </p>
                     </td>
                 </tr>
@@ -113,6 +113,30 @@
                         </div>
                         <p class="description" id="aipwrd_comment-threshold">
                             <?php echo __('The APS Content Moderator API can handle a maximum of 1024 characters per request. The comment field will be interactively checked for a maximum length of 1024 characters. If you deactivate the limitation, only the first 1024 characters of the comment are checked.', APS_Content_Moderator::PLUGIN_NAME)?>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><label><?php echo __('Comment Max-Length Notification', APS_Content_Moderator::PLUGIN_NAME)?></label></th>
+                    <td>
+                        <div id="aps-content-moderator__comment-threshold">
+                            <?php $maxLengthNoteEnabled = get_option('aps-content-moderator-cm-settings_comment-max-length-note', 0) ? true : false;?>
+                            <input type="checkbox" name="aps-content-moderator-cm-settings_comment-max-length-note" id="aps-content-moderator__comment-max-length-note" <?php echo $maxLengthNoteEnabled ? 'checked="checked"' : ''?>/>
+                        </div>
+                        <p class="description" id="aipwrd_comment-threshold">
+                            <?php echo __('Decide if you want the note to be displayed below the comment field, how many characters are left up to maximum of 1024.', APS_Content_Moderator::PLUGIN_NAME)?>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><label><?php echo __('Comment Textinput Element', APS_Content_Moderator::PLUGIN_NAME)?></label></th>
+                    <td>
+                        <div id="aps-content-moderator__comment-field-id">
+                            <?php $commentFieldId = get_option('aps-content-moderator-cm-settings_comment-field-id');?>
+                            <input type="text" name="aps-content-moderator-cm-settings_comment-field-id" id="aps-content-moderator__comment-field-id" value="<?php echo $commentFieldId ?>"/>
+                        </div>
+                        <p class="description" id="aipwrd_comment-threshold">
+                            <?php echo __('Here, you can enter the HTML Element "id" or "class" of the comment field / textarea, if your blog does not use the standard comment form field.', APS_Content_Moderator::PLUGIN_NAME)?>
                         </p>
                     </td>
                 </tr>
