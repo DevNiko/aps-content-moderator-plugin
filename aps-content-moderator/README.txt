@@ -4,7 +4,7 @@ Website link: https://github.com/DevNiko/aps-content-moderator-plugin
 Tags: text analysis, ai, comment, blog post, filtering, unwanted content
 Requires at least: 4.5.0
 Tested up to: 5.2.3
-Stable tag: trunk
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
