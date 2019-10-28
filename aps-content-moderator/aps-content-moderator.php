@@ -11,7 +11,7 @@
  * Plugin Name:           APS Content Moderator Plugin
  * Plugin URI:              https://github.com/DevNiko/aps-content-moderator-plugin
  * Description:             APS Content Moderator API Plugin.
- * Version:                   1.0.1
+ * Version:                   1.1.1
  * Author:                    DevNiko
  * Author URI:              https://github.com/DevNiko
  * License:                   GPL-2.0+
